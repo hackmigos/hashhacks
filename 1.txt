@@ -1,0 +1,19 @@
+1)Using Blockchain we till now have summarised our idea of using blockchain for giving loans using khasra ID's
+We've built the portal for Banks till now the front end and a part of back end.
+Here by entering the Aadhar ID and Khasra ID of a consumer/borrower it gets the data from the DB and shows the data about the Khasra the personal details of the borrower.
+
+2)In the next 6-7 hours we plan to continue the portal and build a system where the bank can enter the loan details of the user and is able to find out which all documnents of the user have been verified.
+along with this we're planning to give Android support to the users where they can login and see photos of the property/khasra and they upload the documents for verification purposes and check the approval.  
+
+3)Effective Uses of blockchain we plan to have - 
+
+-->A transparent, single source of truth – If any member of the network tries to make a change to a block everyone else in the chain can see where the change happened and can decide whether this is an authorized change.
+
+-->Tamper proof information – In practice, say the distributed ledger is shared across 5,000 computers and a hacker wanted to change some information recorded in one of the blocks, they would have to hack all 5,000 computers simultaneously.
+
+-->Instantaneous transfer – Reconciliation and payment of transaction happens in less than 10 minutes versus an average of a few days for third-party systems.
+
+-->Removal of Middle-Men hence lesser costs and more speed- The P2P nature of the blockchain does away with the need of intermediaries and users interact directly with each other.
+
+-->Automation - With the removal of intermediaries and the distributed ledger being updated in real-time by the miners, any data inputted on the blockchain is transmitted and stored automatically.
+
