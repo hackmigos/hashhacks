@@ -1,0 +1,38 @@
+<div class="wrapper">
+  <div class="container">
+    <h1>Welcome</h1>
+    
+    <form class="form" #f="ngForm" (ngSubmit)="login(f.value)">
+      <div class="alert alert-danger" *ngIf="errorMessage">
+        {{errorMessage}}
+      </div>
+      <input ngModel name='email' type="text" placeholder="Username">
+      <input ngModel name='password' type="password" placeholder="Password">
+      <button type="submit" id="login-button">Login</button>
+    </form>
+  </div>
+</div>
+<!-- 
+  <div class="body">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-responsive" src='' alt="Blockever">
+      </div>
+      <div class="col-md-6">
+        <div class="login-page">
+          <div class="form">
+            <div class="alert alert-danger" *ngIf="errorMessage">
+              {{errorMessage}}
+            </div>
+            <form class="login-form" #f="ngForm" (ngSubmit)="login(f.value)">
+              <input ngModel type="text" placeholder="email" name="email"/>
+              <input ngModel type="password" placeholder="password" name="password"/>
+              <button>Login</button>
+              <p class="message">Not registered? <a routerLink="/signup">Create an account</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div> -->

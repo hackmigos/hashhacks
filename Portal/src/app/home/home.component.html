@@ -1,0 +1,37 @@
+<div class="wrapper">
+        <div class="container">
+            <h1>Get Land Details</h1>
+            
+            <form class="form" #f="ngForm" (ngSubmit)="search(f.value)" ngNativeValidate>
+                <div class='alert' *ngIf='errormessage'>
+                    {{ errormessage }}
+                </div>
+                <input ngModel name='aadhar_id' pattern="^\d{12}$" type="text" placeholder="Aadhar ID" required>
+                <input ngModel name='khasra_id' type="text" placeholder="Khasra ID" required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>  
+
+
+<!-- <div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class='outer-div'>
+            
+            <div class='card middle-div' style='background-color:#EEEEEE'>
+                <div class='card-block'>
+                    
+                    
+                    <form id="form" class="topBefore" #f="ngForm" (ngSubmit)="search(f.value)">
+                        
+                        <input ngModel name="aadharid" type="text" pattern='^\d{4}\s\d{4}\s\d{4}$' placeholder="Aadhar ID">
+                        <input ngModel name="khasraid" type="text" placeholder="Khasra ID">
+                        <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                        <input id="submit" type="submit" value="Search">
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

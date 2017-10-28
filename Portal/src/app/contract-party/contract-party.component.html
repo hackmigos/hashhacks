@@ -1,0 +1,80 @@
+<section>
+  <!--for demo wrap--><div class='row'>
+    <div class='col-md-6'>
+      <div class='custom-table'>
+        <h1>Borrower Details</h1>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+              <tr>
+                <th scope="row">Adhar no</th>
+                <td>{{ aadhar.uid }}</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">Khasara no.</th>
+                <td>{{ khasra.khasraid }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Name</th>
+                <td>{{ khasra.name }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Mob no.</th>
+                <td>{{ aadhar.phone }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Address</th>
+                <td>{{ aadhar.street + " " + aadhar.subdist + " " + aadhar.state }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Father Name</th>
+                <td> {{ khasra.father_name}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <div class='col-md-6'>
+      <div class='custom-table'>
+        <h1>Lender Details</h1>
+        <div class="tbl-content">
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+              <tr>
+                <th scope="row">Bank</th>
+                <td>{{bank.bank}}</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">Branch.</th>
+                <td>{{bank.branch}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Address</th>
+                <td>{{bank.address}}</td>
+              </tr>
+              <tr>
+                <th scope="row">Employee</th>
+                <td>{{ bank.employee_name }}</td>
+              </tr>
+              <tr>
+                <th scope="row">Employee ID</th>
+                <td>{{ bank.employee_id }}</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="text-center">
+    <button (click)='proceed()'>Proceed</button>
+  </div>
+</section>
+

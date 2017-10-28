@@ -1,0 +1,25 @@
+<div class="wrapper">
+  <div class="container">
+    <h1>Welcome</h1>
+    
+    <form class="form" #f="ngForm" (ngSubmit)="signup(f.value)">
+      <div class="alert alert-danger" *ngIf="errorMessage">
+        {{errorMessage}}
+      </div>
+      <select name='bank' ngModel (change)="onchange($event.target.value)">
+        <option disabled selected>Select Bank</option>
+        <option *ngFor="let bank of banks" value="{{ bank.bank }}">{{ bank.bank }}
+        </option>
+      </select>
+      <select name='branch' ngModel>
+          <option disabled selected>Select Branch</option>
+          <option *ngFor="let branch of branches" value="{{ branch.branch }}">{{ branch.branch }}
+          </option>
+        </select>
+      <input ngModel name='email' type="text" placeholder="Username">
+      <input ngModel name='password' type="password" placeholder="Password">
+      <input ngModel name='cpassword' type="password" placeholder="Confirm Password">
+      <button type="submit" id="login-button">Login</button>
+    </form>
+  </div>
+</div>

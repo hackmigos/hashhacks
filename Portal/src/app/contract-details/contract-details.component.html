@@ -1,0 +1,67 @@
+<section>
+    <!--for demo wrap--><div class='row'>
+      <div class='col-md-6'>
+        <div class='custom-table'>
+          <h1>Collateral Details</h1>
+          <div class="tbl-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                    <tr>
+                      <th scope="row">Account no</th>
+                      <td>{{loan.account}}</td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row">Location </th>
+                      <td>{{khasra.tehsil}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Size</th>
+                      <td>{{khasra.land_area}} {{khasra.land_area_unit}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Category</th>
+                      <td>{{ khasra.land_category }}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Father Name</th>
+                      <td>{{ khasra.father_name }}</td>
+                    </tr>
+                  </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      
+      <div class='col-md-6'>
+        <div class='custom-table'>
+          <h1>Loan Details</h1>
+          <div class="tbl-content">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+              <tr>
+                <th scope="row">Amount</th>
+                <td>{{ loan.amount }}</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">Interest Rate</th>
+                <td>{{ loan.rate }}% per Annum</td>
+              </tr>
+              <tr>
+                <th scope="row">loan Period</th>
+                <td>{{loan.period}} Years</td>
+              </tr>              
+            </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="text-center">
+      <button (click)='proceed()'>Proceed</button>
+    </div>
+  </section>
+  

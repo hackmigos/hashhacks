@@ -1,0 +1,14 @@
+div.outer-div {
+    height: 100%;
+}
+
+div.middle-div {
+    position: relative;
+    top: 30%;
+    height: 100%;
+    margin-bottom: 5%;
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
+
+}

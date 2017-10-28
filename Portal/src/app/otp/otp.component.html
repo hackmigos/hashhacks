@@ -1,0 +1,29 @@
+<div class="wrapper">
+    <div class="container">
+        <h1>OTP Verifcation</h1>
+        
+        <form class="form" #f="ngForm" (ngSubmit)="verify(f.value)" ngNativeValidate>
+            
+            <div class='alert' *ngIf="errormessage">
+                {{errormessage}}
+            </div>
+
+            <input ngModel name='otp' type="number" pattern="^\d{6}$" placeholder="Enter OTP">
+            <button [disabled]="!f.valid" type="submit">Verify</button>
+            <small class="form-text text-muted">OTP is valid only for 5 mins.</small>
+      
+        </form>
+    </div>
+</div>  
+
+<!-- 
+<form #f="ngForm" (ngSubmit)="verify(f.value)">
+    
+    <div class='form-group'>
+      <label for="otp">OTP</label>
+      <input ngModel class="form-control" id='otp' name="otp" type='number' placeholder="OTP">
+      <small class="form-text text-muted">OTP is valid only for 5 mins.</small>
+    </div>
+    <button class='btn btn-primary' type="submit">verify</button>
+    
+</form> -->

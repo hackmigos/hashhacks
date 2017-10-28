@@ -1,0 +1,10 @@
+<div>
+  <app-show-image></app-show-image>
+</div>
+<div class='text-center'>
+  <div class='alert' *ngIf="errormessage">
+    {{errormessage}}
+  </div>
+  <button [disabled]='isclicked' type="submit" (click)="submit()">Initiate Loan</button> 
+  <!-- <button type='submit' class='btn btn-primary' (click)="submit()">Initiate Loan</button> -->
+</div>      
